@@ -14,8 +14,9 @@
 <body style="min-height: 830px;background-color:white;">
 <section class="body">
     <%--<jsp:include page="../head-section.jsp"/>--%>
-    <div >
 
+    <div >
+        <jsp:include page="extract-notification.jsp"/>
         <section role="main">
        <section class="panel panel-horizontal  home-panel">
 

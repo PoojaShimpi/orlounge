@@ -91,10 +91,12 @@ public class ORS3 {
             try {
                 outputStream.close();
             } catch (Exception e) {
+                e.printStackTrace();
             }
             try {
                 object.getObjectContent().close();
             } catch (Exception e) {
+                e.printStackTrace();
             }
         }
 

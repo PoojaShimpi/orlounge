@@ -175,7 +175,7 @@
                                                    <span style="color:white;font-size:15px;"><b>Messages</b></span>
                                                </a>
                     </li>
-                    </li>
+
                     <%
                         }
                     %>
