@@ -26,7 +26,7 @@
 
 
 
-    <iframe src="http://35.173.136.146/chat/?id=<%=token.getUserId()%>" title="W3Schools Free Online Web Tutorials" height="700" width="800">
+    <iframe src="http://35.173.136.146/chat/?id=<%=token.getUserId()%>" title="W3Schools Free Online Web Tutorials" height="700" width="900">
     </iframe>
  <jsp:include page="right-side-option-bar.jsp"/>
 </section>
