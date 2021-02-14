@@ -21,24 +21,6 @@
             <img src="assets/images/sec_alert_3.png" />
         </a
 --%>
-        <a  class="modal-with-move-anim  btn twelevefont bold " href="#securityModal"  style="line-height: 20px;color: #fff;background-color:#c2212d;font-weight: 700;font-size: 19px;">Security Alert</a>
-        <br/>
-        <br/>
-        <%if(token.isLSA()){
-        %>
-            <%--
-        <a class="btn twelevefont bold red-highlight" href="esps.html" style="float:left;" >Need Enhanced Security?</a>
-
-        <br/>
-        <br/>
-         --%>
-        <%
-        }
-        %>
-
-        <a  class="modal-with-move-anim  btn twelevefont bold " href="#securityModal"  style="color: #000;font-weight: 700;font-size: 19px;">YOUR INPUT IS NEEDED</a>
-        <br/>
-        <br/>
         <a class="modal-with-move-anim btn twelevefont bold red-highlight" href="#bugModal" style="float:left;" onclick="resetReport()">REPORT A BUG</a>
         <br/>
         <br/>
