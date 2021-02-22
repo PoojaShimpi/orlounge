@@ -17,6 +17,7 @@ import org.springframework.web.multipart.MultipartFile;
 import java.io.File;
 import java.io.FileOutputStream;
 import java.io.IOException;
+import java.io.OutputStream;
 import java.nio.file.Files;
 import java.util.*;
 
@@ -497,7 +498,10 @@ public class UserServiceImpl extends AbstractBaseBusiness implements UserDetails
             }
             File f = new File(System.getProperty("java.io.tmpdir") + "\\uploads" + "\\" + file.getOriginalFilename());
             f.createNewFile();
-            Files.copy(f.toPath(), new FileOutputStream(f));
+            try (OutputStream os = Files.newOutputStream(f.toPath())) {
+                os.write(file.getBytes());
+            }
+       //     Files.copy(f.toPath(), new FileOutputStream(f));
             ORS3 ors3 = ORS3.getInstance(accessKey, secretKey, region);
             String fId = StringUtil.getUUID();
             String ext = f.getName().substring(f.getName().lastIndexOf("."));

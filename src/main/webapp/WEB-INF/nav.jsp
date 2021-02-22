@@ -199,7 +199,7 @@
                             </li>
 
                             <li>
-                                <a href="manage-geo-fence.html">
+                                <a href="geo.html">
                                     Manage Geo Fence
                                 </a>
                             </li>

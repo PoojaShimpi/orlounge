@@ -149,7 +149,7 @@
          var email = $('#email').val();
          var hospitalPhNoMask = $('#hospital-phone').val().replace(/[^0-9\.]/g, '');
          if (hospitalPhNoMask) {
-             var data = "email=" + email + "&hospitalPhNo=" + encodeURIComponent('+') + "91" + hospitalPhNoMask;
+             var data = "email=" + email + "&hospitalPhNo=" + encodeURIComponent('+') + "1" + hospitalPhNoMask;
          }
          if(email && hospitalPhNoMask){
          myAjax({

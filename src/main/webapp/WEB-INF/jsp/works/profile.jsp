@@ -5,6 +5,7 @@
 <%@ page import="org.orlounge.bean.UserBean" %>
 <%@ page import="org.orlounge.bean.StaffInfoBean" %>
 <%@ page import="org.orlounge.common.util.ProcessData" %>
+<%@ page import="org.orlounge.common.util.StringUtil" %>
 <%@ page import="org.orlounge.common.*" %>
 
 <script type="text/javascript">
@@ -159,19 +160,19 @@
                         <div class="form-group">
                             <label class="col-md-3 control-label" for="profileFirstName">Title</label>
                             <div class="col-md-8">
-                                <input data-plugin-maxlength path="title" maxlength="10" value="<%=StringUtil.getNotNullString(staff.getTitle()) %>" <%=isView ? "disabled='disabled'" : ""%> type="text" class="form-control" id="title" name="title">
+                                <input data-plugin-maxlength path="title" maxlength="10" value="<%=staff.getTitle()%>" <%=isView ? "disabled='disabled'" : ""%> type="text" class="form-control" id="title" name="title">
                             </div>
                         </div>
                         <div class="form-group">
                             <label class="col-md-3 control-label" for="profileLastName">Mobile Ph No.</label>
                             <div class="col-md-8">
-                                <input path="mobile" data-plugin-maxlength maxlength="25" type="text" value="<%=StringUtil.getNotNullString(staff.getMobile())%>" <%=isView ? "disabled='disabled'" : ""%>  class="form-control" id="mobile" name="mobile">
+                                <input path="mobile" data-plugin-maxlength maxlength="25" type="text" value="<%=staff.getMobile()%>" <%=isView ? "disabled='disabled'" : ""%>  class="form-control" id="mobile" name="mobile">
                             </div>
                         </div>
                         <div class="form-group">
                             <label class="col-md-3 control-label" for="profileAddress">Office Ph No.</label>
                             <div class="col-md-8">
-                                <input path="officePhNo" data-plugin-maxlength maxlength="25" type="text" value="<%=StringUtil.getNotNullString(staff.getOfficePhNo())%>"  class="form-control" id="officePhNo" <%=isView ? "disabled='disabled'" : ""%> name="officePhNo">
+                                <input path="officePhNo" data-plugin-maxlength maxlength="25" type="text" value="<%=staff.getOfficePhNo()%>"  class="form-control" id="officePhNo" <%=isView ? "disabled='disabled'" : ""%> name="officePhNo">
                             </div>
                         </div>
 
@@ -182,67 +183,67 @@
                         <div class="form-group">
                             <label class="col-md-3 control-label" for="profileBio">Address</label>
                             <div class="col-md-8">
-                                <textarea path="address" data-plugin-maxlength maxlength="150" class="form-control" <%=isView ? "disabled='disabled'" : ""%> rows="3" name="address" id="address"><%=StringUtil.getNotNullString(staff.getAddress())%> </textarea>
+                                <textarea path="address" data-plugin-maxlength maxlength="150" class="form-control" <%=isView ? "disabled='disabled'" : ""%> rows="3" name="address" id="address"><%=staff.getAddress()%> </textarea>
                             </div>
                         </div>
                         <div class="form-group">
                             <label class="col-md-3 control-label" for="profileAddress">State</label>
                             <div class="col-md-8">
-                                <input path="state" data-plugin-maxlength maxlength="30" name="state" type="text" class="form-control" id="state" value="<%=StringUtil.getNotNullString(staff.getState())%>" <%=isView ? "disabled='disabled'" : ""%> >
+                                <input path="state" data-plugin-maxlength maxlength="30" name="state" type="text" class="form-control" id="state" value="<%=staff.getState()%>" <%=isView ? "disabled='disabled'" : ""%> >
                             </div>
                         </div>
                         <div class="form-group">
                             <label class="col-md-3 control-label" for="profileAddress">City</label>
                             <div class="col-md-8">
-                                <input name="city" data-plugin-maxlength maxlength="30" path="city" type="text" class="form-control" id="city" value="<%=StringUtil.getNotNullString(staff.getCity())%>" <%=isView ? "disabled='disabled'" : ""%>/>
+                                <input name="city" data-plugin-maxlength maxlength="30" path="city" type="text" class="form-control" id="city" value="<%=staff.getCity()%>" <%=isView ? "disabled='disabled'" : ""%>/>
                             </div>
                         </div>
                         <div class="form-group">
                             <label class="col-md-3 control-label" for="profileBio">Surgical Speciality Of Surgeon</label>
                             <div class="col-md-8">
-                                <textarea name="surgicalSpeciality" data-plugin-maxlength maxlength="150" path="surgicalSpeciality" class="form-control" rows="3" id="surgicalSpeciality" <%=isView ? "disabled='disabled'" : ""%>><%=StringUtil.getNotNullString(staff.getSurgicalSpeciality())%></textarea>
+                                <textarea name="surgicalSpeciality" data-plugin-maxlength maxlength="150" path="surgicalSpeciality" class="form-control" rows="3" id="surgicalSpeciality" <%=isView ? "disabled='disabled'" : ""%>><%=staff.getSurgicalSpeciality()%></textarea>
                             </div>
                         </div>
                         <div class="form-group">
                             <label class="col-md-3 control-label" for="profileAddress">Special Accreditation if Any</label>
                             <div class="col-md-8">
-                                <input path="specialAccrediation" data-plugin-maxlength maxlength="50" name="specialAccrediation" type="text" class="form-control" id="specialAccrediation" value="<%=StringUtil.getNotNullString(staff.getSpecialAccrediation())%>" <%=isView ? "disabled='disabled'" : ""%>>
+                                <input path="specialAccrediation" data-plugin-maxlength maxlength="50" name="specialAccrediation" type="text" class="form-control" id="specialAccrediation" value="<%=staff.getSpecialAccrediation()%>" <%=isView ? "disabled='disabled'" : ""%>>
                             </div>
                         </div>
                         <div class="form-group">
                             <label class="col-md-3 control-label" for="profileAddress">Website</label>
                             <div class="col-md-8">
-                                <input path="website" data-plugin-maxlength maxlength="50" name="website" type="text" class="form-control" id="website" value="<%=StringUtil.getNotNullString(staff.getWebsite())%>" <%=isView ? "disabled='disabled'" : ""%>>
+                                <input path="website" data-plugin-maxlength maxlength="50" name="website" type="text" class="form-control" id="website" value="<%=staff.getWebsite()%>" <%=isView ? "disabled='disabled'" : ""%>>
                             </div>
                         </div>
                         <div class="form-group">
                             <label class="col-md-3 control-label" for="profileAddress">Office Manager</label>
                             <div class="col-md-8">
-                                <input path="officeManager" name="officeManager" type="text" data-plugin-maxlength maxlength="50" class="form-control" id="offMgr" value="<%=StringUtil.getNotNullString(staff.getOfficeManager())%>" <%=isView ? "disabled='disabled'" : ""%>>
+                                <input path="officeManager" name="officeManager" type="text" data-plugin-maxlength maxlength="50" class="form-control" id="offMgr" value="<%=staff.getOfficeManager()%>" <%=isView ? "disabled='disabled'" : ""%>>
                             </div>
                         </div>
                         <div class="form-group">
                             <label class="col-md-3 control-label" for="profileAddress">Office Hours</label>
                             <div class="col-md-8">
-                                <input path="officeHrs" name="officeHrs" type="text" class="form-control" id="offHours" data-plugin-maxlength maxlength="30" value="<%=StringUtil.getNotNullString(staff.getOfficeHrs())%>" <%=isView ? "disabled='disabled'" : ""%>>
+                                <input path="officeHrs" name="officeHrs" type="text" class="form-control" id="offHours" data-plugin-maxlength maxlength="30" value="<%=staff.getOfficeHrs()%>" <%=isView ? "disabled='disabled'" : ""%>>
                             </div>
                         </div>
                         <div class="form-group">
                             <label class="col-md-3 control-label" for="profileAddress">NPI</label>
                             <div class="col-md-8">
-                                <input path="npi" data-plugin-maxlength maxlength="30" name="npi" type="text" class="form-control" id="npi" value="<%=StringUtil.getNotNullString(staff.getNpi())%>" <%=isView ? "disabled='disabled'" : ""%>>
+                                <input path="npi" data-plugin-maxlength maxlength="30" name="npi" type="text" class="form-control" id="npi" value="<%=staff.getNpi()%>" <%=isView ? "disabled='disabled'" : ""%>>
                             </div>
                         </div>
                         <div class="form-group">
                             <label class="col-md-3 control-label" for="profileAddress">Covering Physician If Any</label>
                             <div class="col-md-8">
-                                <input path="coveringPhy" name="coveringPhy" data-plugin-maxlength maxlength="50" type="text" class="form-control" id="covPhy" value="<%=StringUtil.getNotNullString(staff.getCoveringPhy())%>" <%=isView ? "disabled='disabled'" : ""%>>
+                                <input path="coveringPhy" name="coveringPhy" data-plugin-maxlength maxlength="50" type="text" class="form-control" id="covPhy" value="<%=staff.getCoveringPhy()%>" <%=isView ? "disabled='disabled'" : ""%>>
                             </div>
                         </div>
                         <div class="form-group">
                             <label class="col-md-3 control-label" for="profileAddress">Additional Info.</label>
                             <div class="col-md-8">
-                                <textarea data-plugin-maxlength maxlength="150" path="additionalInfo" name="additionalInfo" class="form-control" rows="3" <%=isView ? "disabled='disabled'" : ""%> id="addInfo"><%=StringUtil.getNotNullString(staff.getAdditionalInfo())%></textarea>
+                                <textarea data-plugin-maxlength maxlength="150" path="additionalInfo" name="additionalInfo" class="form-control" rows="3" <%=isView ? "disabled='disabled'" : ""%> id="addInfo"><%=staff.getAdditionalInfo()%></textarea>
                             </div>
                         </div>
 

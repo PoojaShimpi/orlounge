@@ -88,34 +88,34 @@ var success = true;
     %>
     <td  class="warning">Access Pending</td>
     <td class="actions-hover actions-fade">
-        <a href="approveUser?userId=<%=u.getUserId()%>&groupId=<%=u.getGrpId()%>"><i class="fa fa-check-circle"></i></a>
-        <a href="deleteUser?userId=<%=u.getUserId()%>&groupId=<%=u.getGrpId()%>" class="delete-row"><i class="fa fa-trash-o"></i></a>
-        <a href="profile.html?userId=<%=u.getUserId()%>&groupId=<%=u.getGrpId()%>" class="delete-row"><i class="fa fa-vcard"></i></a>
+        <a   title="Approve User" href="approveUser?userId=<%=u.getUserId()%>&groupId=<%=u.getGrpId()%>"><i class="fa fa-check-circle"></i></a>
+        <a title="Delete User"  href="deleteUser?userId=<%=u.getUserId()%>&groupId=<%=u.getGrpId()%>" class="delete-row"><i class="fa fa-trash-o"></i></a>
+        <a title="Profile" href="profile.html?userId=<%=u.getUserId()%>&groupId=<%=u.getGrpId()%>" class="delete-row"><i class="fa fa-vcard"></i></a>
 
     <%
         } else if(u.getStatus().equalsIgnoreCase("PENDING")){
     %>
     <td  class="warning">Pending</td>
     <td class="actions-hover actions-fade">
-        <a href="approveUser?userId=<%=u.getUserId()%>&groupId=<%=u.getGrpId()%>"><i class="fa fa-check-circle"></i></a>
-        <a href="deleteUser?userId=<%=u.getUserId()%>&groupId=<%=u.getGrpId()%>" class="delete-row"><i class="fa fa-trash-o"></i></a>
-        <a href="profile.html?userId=<%=u.getUserId()%>&groupId=<%=u.getGrpId()%>" class="delete-row"><i class="fa fa-vcard"></i></a>
+        <a  title="Approve User" href="approveUser?userId=<%=u.getUserId()%>&groupId=<%=u.getGrpId()%>"><i class="fa fa-check-circle"></i></a>
+        <a title="Delete User" href="deleteUser?userId=<%=u.getUserId()%>&groupId=<%=u.getGrpId()%>" class="delete-row"><i class="fa fa-trash-o"></i></a>
+        <a title="Profile" href="profile.html?userId=<%=u.getUserId()%>&groupId=<%=u.getGrpId()%>" class="delete-row"><i class="fa fa-vcard"></i></a>
 
     <%
         } else if (u.getStatus().equalsIgnoreCase("ACTIVE")){
     %>
     <td  class="success">Active</td>
     <td class="actions-hover actions-fade">
-        <a href="disapproveUser?userId=<%=u.getUserId()%>&groupId=<%=u.getGrpId()%>"><i class="fa fa-user-times"></i></a>
-        <a href="deleteUser?userId=<%=u.getUserId()%>&groupId=<%=u.getGrpId()%>" class="delete-row"><i class="fa fa-trash-o"></i></a>
-        <a href="profile.html?userId=<%=u.getUserId()%>&groupId=<%=u.getGrpId()%>" class="delete-row"><i class="fa fa-vcard"></i></a>
+        <a title="Disapprove User" href="disapproveUser?userId=<%=u.getUserId()%>&groupId=<%=u.getGrpId()%>"><i class="fa fa-user-times"></i></a>
+        <a title="Delete User" href="deleteUser?userId=<%=u.getUserId()%>&groupId=<%=u.getGrpId()%>" class="delete-row"><i class="fa fa-trash-o"></i></a>
+        <a title="Profile" href="profile.html?userId=<%=u.getUserId()%>&groupId=<%=u.getGrpId()%>" class="delete-row"><i class="fa fa-vcard"></i></a>
     <%
         } else  if(u.getStatus().equalsIgnoreCase("DELETED")){
     %>
     <td  class="danger">Deleted</td>
     <td class="actions-hover actions-fade">
-        <a href="approveUser?userId=<%=u.getUserId()%>&groupId=<%=u.getGrpId()%>"><i class="fa fa-check-circle"></i></a>
-        <a href="profile.html?userId=<%=u.getUserId()%>&groupId=<%=u.getGrpId()%>" class="delete-row"><i class="fa fa-vcard"></i></a>
+        <a title="Approve User" href="approveUser?userId=<%=u.getUserId()%>&groupId=<%=u.getGrpId()%>"><i class="fa fa-check-circle"></i></a>
+        <a title="Profile" href="profile.html?userId=<%=u.getUserId()%>&groupId=<%=u.getGrpId()%>" class="delete-row"><i class="fa fa-vcard"></i></a>
     <%
         } %>
     <%
