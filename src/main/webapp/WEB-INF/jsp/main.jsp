@@ -12,7 +12,7 @@
 <jsp:include page="../header.jsp"/>
 
 <body style="min-height: 830px;background-color:white;">
-<section class="body">
+<section class="body" style="font-family:palatino;">
     <%--<jsp:include page="../head-section.jsp"/>--%>
 
     <div >
