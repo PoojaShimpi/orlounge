@@ -26,6 +26,7 @@ public interface AppConstants {
     String RADIOLOGIST_ROLE = "radiologist";
     String RESIDENT_ROLE = "resident";
     String ASSISTANT_ROLE = "assistant";
+    String DIRECTOR_OF_SURGERY = "Director of Surgery";
     String GUEST_ROLE = "guest";
     String STAFF_ROLE = "staff";
 

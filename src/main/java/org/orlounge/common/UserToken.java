@@ -117,7 +117,7 @@ public class UserToken {
         return ORM_ROLE.equals(getRole());
     }
     public boolean isSurgeon() {
-        return SURGEON_ROLE.equals(getRole());
+        return SURGEON_ROLE.equals(getRole()) || DIRECTOR_OF_SURGERY.equals(getRole());
     }
 
     public String getUserImage() {

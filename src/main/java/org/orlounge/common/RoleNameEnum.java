@@ -22,6 +22,7 @@ public abstract class RoleNameEnum {
         ROLE_NAME_MAP.put(AppConstants.RADIOLOGIST_ROLE, "radiologist");
         ROLE_NAME_MAP.put(AppConstants.RESIDENT_ROLE, "Resident");
         ROLE_NAME_MAP.put(AppConstants.ASSISTANT_ROLE, "Surgical Assistant");
+        ROLE_NAME_MAP.put(AppConstants.DIRECTOR_OF_SURGERY, "Director of Surgery");
     }
 
 }
