@@ -17,16 +17,16 @@
 
     <div >
         <jsp:include page="extract-notification.jsp"/>
-        <div class="panel center">
+        <div class="panel">
 
         <div >
                           <section class="panel panel-horizontal  home-panel" style="background-color:white;">
-                          <div class="col-md-4">   <img src="resources/images/lounge-logo.png" style="height:132.87px;">
+                          <div class="col-md-1" style="width:180px;">   <img src="resources/images/lounge-logo.png" style="height:132.87px;">
                           </div>
-                             <div class="col-md-8">         <p style="font-size:20px;;margin-top:20px;"> <b>
+                             <div class="col-md-9" style="padding-top:10px;">         <p style="font-size:40px;;margin-top:23px;"> <b>
                                                                 <b>     WWW.ORLounge.com is for the operating room community</b>
                                                                  </b></p>
-                                                                 <p style="font-size:20px;margin-top:20px;">
+                                                                 <p style="font-size:23px;margin-top:40px;margin-left:45px;">
                                                                      Any staff from the operating room can create a private Lounge to work together
                                                                  </p>
                                                             </div>
@@ -103,12 +103,12 @@
   <div class="col-md-12" style="padding-top:60px;padding-left:200px;">
   <div class="col-md-4">
   <form class="navitem" method="get" action="register-holder.html">
-                                        <input type="submit" value="Register Here" style="background-color: #00BFFF; /* Green */ border: none;color: white;border-radius: 2px;padding: 15px 32px;text-align: center;text-decoration: none;display: inline-block;font-size: 13px;margin: 4px 2px;box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);cursor: pointer;-webkit-transition-duration: 0.4s; /* Safari */transition-duration: 0.4s;">
+                                        <input type="submit" value="Register Here" style="background-color: #FFFFFF; /* Green */ border: none;color: black;border-radius: 2px;padding: 15px 32px;text-align: center;text-decoration: none;display: inline-block;font-size: 13px;margin: 4px 2px;box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);cursor: pointer;-webkit-transition-duration: 0.4s; /* Safari */transition-duration: 0.4s;">
                                         </form>
   </div>
   <div class="col-md-4">
    <form class="navitem" method="get" action="login.html">
-                                                                               <input type="submit" value="  Login Here    " style="background-color: #00BFFF; /* Green */ border: none;color: white;border-radius: 2px;padding: 15px 32px;text-align: center;text-decoration: none;display: inline-block;font-size: 13px;margin: 4px 2px;box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);cursor: pointer;-webkit-transition-duration: 0.4s; /* Safari */transition-duration: 0.4s;">
+                                                                               <input type="submit" value="  Login Here    " style="background-color: #FFFFFF; /* Green */ border: none;color: black;border-radius: 2px;padding: 15px 32px;text-align: center;text-decoration: none;display: inline-block;font-size: 13px;margin: 4px 2px;box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);cursor: pointer;-webkit-transition-duration: 0.4s; /* Safari */transition-duration: 0.4s;">
                                                                                </form>
     </div>
   </div>
@@ -165,7 +165,7 @@
 
                   </section>--%>
                 <%-- </div>--%>
-<div class="col-md-12" style="padding-top:35px;padding-left:400px;margin-top:30px;color:white;font-size:25px;background-color:#87CEFA;height:70px;width:1500px;"> <b> It's a dashboard, a collaborative, productivity, management and social site </b>
+<div class="col-md-12" style="padding-top:30px;padding-left:400px;margin-top:30px;color:white;font-size:25px;background-color:#75a9fe;height:70px;width:1500px;"> <b> It's a dashboard, a collaborative, productivity, management and social site </b>
 </div>
             </div>
 
