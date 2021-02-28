@@ -46,66 +46,78 @@
             <!-- start: page -->
 
             <div class="clearfix">
-                <div class="center" style="margin-top:330px;">
-                    <div class="panel">
+
+         <div class="" style="margin-top:350px;">
+                                           <div class="col-md-2">
 
 
-                    </div>
-  <div class="col-md-3" style="background-color:white;">
-  <div class="panel-body p-lg" style="background-color:white;">
+                                           </div>
+                         <div class="col-md-2" style="height:230.64px;width:270px;margin-right: 81px;margin-left: -99px;">
+                         <div class="panel-body p-sm" style="background-color:white;">
 
-                                                <h4 class="text-weight-semibold mt-sm">
-                    Build your own library.</h4>
+                                                                       <h4 class="text-weight-semibold mt-sm" style="text-align:center">
+                                           DOCUMENT</h4>
 
-                                            </div>
-                                                <img src="resources/images/library.png">
-
-
-                                        </div>
-
-                    <div class="col-md-3" style="height:230.64px;background-color:white;">
-  <div class="panel-body p-lg" style="background-color:white;">
-
-                                                <h4 class="text-weight-semibold mt-sm">
-                    Updated in real-time.</h4>
-
-                                            </div>
-                                                <img src="resources/images/thinMB.png" style="height:132.87px;">
+                                                                   </div>
+                                                                       <img src="resources/images/document.png" style="height:132.87px;width:-webkit-fill-available;">
 
 
-                                        </div>
+                                                               </div>
 
-                    <div class="col-md-3" style="height:230.64px;background-color:white;">
-  <div class="panel-body p-lg" style="background-color:white;">
+                                           <div class="col-md-2" style="height:230.64px;width:280.81px;margin-right: 84px;">
+                         <div class="panel-body p-sm" style="background-color:white;">
 
-                                                <h4 class="text-weight-semibold mt-sm">
-                    Coordinate OR activities.</h4>
+                                                                       <h4 class="text-weight-semibold mt-sm" style="text-align:center">
+                                           KEEP IN TOUCH</h4>
 
-                                            </div>
-                                                <img src="resources/images/coordination.png" style="height:132.87px;">
-
-
-                                        </div>
-
-                    <div class="col-md-3" style="height:230.64px;background-color:white;">
-   <div class="panel-body p-lg" style="background-color:white;">
-
-                                                <h4 class="text-weight-semibold mt-sm">
-                    Increase Productivity .</h4>
-
-                                            </div>
-                                                <img src="resources/images/productivity.png" style="height:132.87px;">
+                                                                   </div>
+                                                                       <img src="resources/images/keepInTouch.png" style="height:132.87px;width:-webkit-fill-available;">
 
 
-                                        </div>
+                                                               </div>
 
-<div class="row">
-  <div class="col-md-12" style="padding-top:60px;padding-left:200px;">
-  <div class="col-md-4">
-  <form class="navitem" method="get" action="register-holder.html">
-                                        <input type="submit" value="Register Here" style="background-color: #FFFFFF; /* Green */ border: none;color: black;border-radius: 2px;padding: 15px 32px;text-align: center;text-decoration: none;display: inline-block;font-size: 13px;margin: 4px 2px;box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);cursor: pointer;-webkit-transition-duration: 0.4s; /* Safari */transition-duration: 0.4s;">
-                                        </form>
-  </div>
+                                           <div class="col-md-2" style="height:230.64px;margin-right: 82px;">
+                         <div class="panel-body p-sm" style="background-color:white;">
+
+                                                                       <h4 class="text-weight-semibold mt-sm" style="text-align:center">
+                                           COORDINATION</h4>
+
+                                                                   </div>
+                                                                       <img src="resources/images/coordination.png" style="height:132.87px;width:-webkit-fill-available;">
+
+
+                                                               </div>
+
+                                           <div style="height:230.64px;" class="col-md-2">
+                          <div class="panel-body p-sm" style="background-color:white;">
+
+                                                                       <h4 class="text-weight-semibold mt-sm" style="text-align:center">
+                                           PRODUCTIVITY</h4>
+
+                                                                   </div>
+                                                                       <img src="resources/images/productivity2.png" style="height:132.87px;width:-webkit-fill-available;">
+
+
+                                                               </div>
+
+                       <div class="row" style="
+                       ">
+                         <div class="col-md-12" style="padding-top:60px;padding-left:200px;">
+            <div class="col-md-4">   </div>
+            <div class="col-md-2">
+
+
+
+
+
+
+
+
+
+          <form class="navitem" method="get" action="register-holder.html">
+                                                <input type="submit" value="Register Here" style="background-color: #FFFFFF; /* Green */ border: none;color: black;border-radius: 2px;padding: 15px 32px;text-align: center;text-decoration: none;display: inline-block;font-size: 13px;margin: 4px 2px;box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);cursor: pointer;-webkit-transition-duration: 0.4s; /* Safari */transition-duration: 0.4s;">
+                                                </form>
+          </div>
   <div class="col-md-4">
    <form class="navitem" method="get" action="login.html">
                                                                                <input type="submit" value="  Login Here    " style="background-color: #FFFFFF; /* Green */ border: none;color: black;border-radius: 2px;padding: 15px 32px;text-align: center;text-decoration: none;display: inline-block;font-size: 13px;margin: 4px 2px;box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);cursor: pointer;-webkit-transition-duration: 0.4s; /* Safari */transition-duration: 0.4s;">
