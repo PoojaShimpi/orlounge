@@ -103,7 +103,7 @@
                        <div class="row" style="
                        ">
                          <div class="col-md-12" style="padding-top:60px;padding-left:200px;">
-            <div class="col-md-4">   </div>
+            <div class="col-md-4" style="width:420px;">   </div>
             <div class="col-md-2">
 
 
