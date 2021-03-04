@@ -216,7 +216,7 @@ public class UserController extends BaseController {
         }
 
         final LoginBean loginBean = new LoginBean();
-        loginBean.setIsActive(1);
+        loginBean.setIsActive(0);
         loginBean.setPass_Reset(1);
         loginBean.setEmail(email);
         loginBean.setPassword(password);

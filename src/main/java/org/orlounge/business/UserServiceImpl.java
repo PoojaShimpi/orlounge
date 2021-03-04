@@ -581,7 +581,7 @@ public class UserServiceImpl extends AbstractBaseBusiness implements UserDetails
                     downloadAndSetProfileImage(file, user);
 
                     login.setLastPassChange(utc);
-                    login.setIsActive(1);
+                    login.setIsActive(0);
                     getServiceFactory().getLoginService().saveLogin(login);
                     user.setCreatedDate(utc);
                     user.setTimezone(timezone);
@@ -603,7 +603,7 @@ public class UserServiceImpl extends AbstractBaseBusiness implements UserDetails
                     UserGroupMap map = new UserGroupMap();
                     map.setUserId(user.getUserId());
                     map.setUser(user);
-                    map.setIsActive(1);
+                    map.setIsActive(0);
                     map.setGroup(grp);
                     map.setGroupId(grp.getGroupId());
                     map.setIsLSA(isLSA ? 1 : 0);
