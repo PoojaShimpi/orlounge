@@ -522,14 +522,14 @@ public class UserServiceImpl extends AbstractBaseBusiness implements UserDetails
         getServiceFactory().getStaffInfoService().saveStaffInfo(staffInfoBean);
     }
 
-    public Map saveUserNewLSA(final LoginBean login, UserBean user, String radioEvent, String hospitalName, Integer hospitalId, Integer numOfBeds, MultipartFile file, String hospitalCreateOrJoin) throws UsernameNotFoundException {
+    public Map saveUserNewLSA(final LoginBean login, UserBean user, String radioEvent, String hospitalName, Integer hospitalId, String sizeOfOR, MultipartFile file, String hospitalCreateOrJoin) throws UsernameNotFoundException {
         Map result = new HashMap();
         String message = "";
         boolean success;
         try {
             GroupBean grp = new GroupBean();
             grp.setUser(user);
-            grp.setNoOfBeds(numOfBeds);
+            grp.setSizeOfOperatinRoom(sizeOfOR);
             grp.setHospitalId(hospitalId);
 
             boolean valid = validateUserLogin(login) && validateUserBean(user) && validateGroup(grp);
@@ -545,7 +545,7 @@ public class UserServiceImpl extends AbstractBaseBusiness implements UserDetails
                     final String timezone = h.getTimezone();
                     Date utc = DateContent.convertClientDateIntoUTCDate(new Date(), timezone);
                     GroupBean alreadyExistsGrp = getGrpAlreadyExistsByHospitalId(grp);
-
+                    alreadyExistsGrp.setSizeOfOperatinRoom(sizeOfOR);
 
 
                     boolean isLSA = false;

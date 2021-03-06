@@ -191,7 +191,7 @@ public class UserController extends BaseController {
             @RequestParam("password") String password,
             @RequestParam("email") String email,
             @RequestParam(value = "hospitalId", required = false) Integer hospitalId,
-            @RequestParam("numOfBeds") Integer numOfBeds,
+            @RequestParam("sizeOfOR") String sizeOfOR,
             @RequestParam("hospitalCreateOrJoin") String hospitalCreateOrJoin,
             @RequestParam("hospitalBadge") MultipartFile hospitalBadge,
             HttpServletRequest request,
@@ -233,7 +233,7 @@ public class UserController extends BaseController {
         user.setHospitalTelPh(hospitalPhNo);
         user.setRole(role);
         try {
-            Map m = getBusinessFactory().getUserService().saveUserNewLSA(loginBean, user, radioEvent, hospitalName, hospitalId, numOfBeds, hospitalBadge, hospitalCreateOrJoin);
+            Map m = getBusinessFactory().getUserService().saveUserNewLSA(loginBean, user, radioEvent, hospitalName, hospitalId, sizeOfOR, hospitalBadge, hospitalCreateOrJoin);
             if (m.get("success").equals(Boolean.TRUE)) {
                 MessageUtils.success(request.getSession(), m.get("message").toString());
             } else {

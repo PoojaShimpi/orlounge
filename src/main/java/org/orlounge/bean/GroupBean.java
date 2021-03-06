@@ -21,6 +21,9 @@ public class GroupBean {
     @Column(name = "group_name")
     private String groupName;
 
+    @Column(name = "size_of_operating_room")
+    private String sizeOfOperatinRoom;
+
     @Column(name = "group_created_by", updatable = true, insertable = true)
     private Integer creatorId;
 
@@ -41,8 +44,6 @@ public class GroupBean {
     @Column(name="hospital_id")
     private Integer hospitalId;
 
-    @Column(name="no_of_beds")
-    private Integer noOfBeds;
 
     @Column(name= "is_trial")
     private Integer trialFlag = 1;
@@ -66,13 +67,6 @@ public class GroupBean {
         this.trialFlag = trialFlag;
     }
 
-    public Integer getNoOfBeds() {
-        return noOfBeds;
-    }
-
-    public void setNoOfBeds(Integer noOfBeds) {
-        this.noOfBeds = noOfBeds;
-    }
 
     public Integer getGroupId() {
         return groupId;
@@ -130,16 +124,25 @@ public class GroupBean {
         this.hospitalId = hospitalId;
     }
 
+    public String getSizeOfOperatinRoom() {
+        return sizeOfOperatinRoom;
+    }
+
+    public void setSizeOfOperatinRoom(String sizeOfOperatinRoom) {
+        this.sizeOfOperatinRoom = sizeOfOperatinRoom;
+    }
+
     @Transient
     public String getGroupSize(){
-        if(this.getNoOfBeds() == null){
+        if(this.getSizeOfOperatinRoom() == null){
             return null;
-        }else if(this.getNoOfBeds() > 100){
+        }else if(this.getSizeOfOperatinRoom().equals("Large")){
             return "L";
-        }else if(this.getNoOfBeds() > 50){
+        }else if(this.getSizeOfOperatinRoom().equals("Medium")){
             return "M";
-        }else{
+        } else if(this.getSizeOfOperatinRoom().equals("Small")) {
             return "S";
         }
+        return null;
     }
 }
