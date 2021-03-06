@@ -215,15 +215,16 @@
                                                         href="#">notification@orlounge.com</a>
                                                 </p>
                                                 <div class="row">
-                                                    <div class="col-md-12">
-                                                                                   <label for="Size of Operating Room *">Size of Operating Room *</label>
-                                                                                                        <select name="sizeOfOR" id="sizeOfOR" required>
+                                                    <div class="col-md-12  mb-0" >
+                                                      <div class="form-group mb-0">
+                                                                                   <label for="Size of Operating Room *" class="role-label">Size of Operating Room *</label>
+                                                                                                        <select name="sizeOfOR" id="sizeOfOR" class="progress-select-box" required>
                                                                                                          <option value="Small">Small (1-5 beds)</option>
                                                                                                          <option value="Medium">Medium (6-10 beds)</option>
                                                                                                          <option value="Large">Large (More than 10 beds)</option>
 
                                                                                                          </select></div>
-
+                                                            </div>
                                                 </div>
 
 
